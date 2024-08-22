@@ -26,6 +26,15 @@
     }
 }
 @media(max-width:1000px) {
+    .series_box{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        max-width: 540px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 20px;
+    }
     .collect_card{
         width: 300px;
         height: 170px;
@@ -70,6 +79,9 @@
 }
 
 @media(max-width:900px) {
+    .game{
+        height: 400px;
+    }
     .collect_box{
         gap: 20px;
         overflow-x:scroll;
@@ -106,8 +118,21 @@
 }
 
 @media(max-width:800px) {
-
-  
+    .footer_text{
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .footer_info{
+        gap: 30px;
+    }
+    .footer_box{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footer{
+        padding: 20px 0;
+        margin-top: 20px;
+    }
     .film_box {
         gap: 20px;
     }
@@ -185,6 +210,20 @@
     }
 }
 @media(max-width:700px) {
+    .game{
+        height: 350px;
+        gap: 20px;
+    }
+    .game_title{
+        font-size: 35px;
+        line-height: 100%;
+    }
+    .game_text{
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
     .intro {
         height: 350px;
     }
@@ -260,6 +299,16 @@
 }
 
 @media(max-width:600px) {
+    .game{
+        height: 300px;
+        gap: 15px;
+    }
+    .game_title{
+        font-size: 30px;
+    }
+    .game_text{
+        line-height: 130%;
+    }
     .widow{
         height: 350px;
     }
@@ -281,6 +330,42 @@
 }
 
 @media(max-width:500px) {
+    .footer{
+        margin-top: 15px;
+        padding: 12px 0;
+    }
+    .footer_text{
+        font-size: 16px;
+        letter-spacing: normal;
+    }
+    .series_box{
+        display: flex;
+        overflow-x: scroll;
+        margin-top: 15px;
+    }
+    .series_card{
+        width: 220px;
+        flex-shrink: 0;
+        min-height: 160px;
+        gap: 8px;
+    }
+    .series_play{
+        width: 32px;
+    }
+    .series_title{
+        font-size: 20px;
+    }
+    .game{
+        height: 250px;
+        gap: 10px;
+    }
+    .game_title{
+        font-size: 25px;
+    }
+    .game_text{
+       font-size: 15px;
+       -webkit-line-clamp: 4;
+    }
     .widow{
         height: 270px;
     }
@@ -352,6 +437,21 @@
 }
 
 @media(max-width:400px) {
+    .game{
+        height: 180px;
+        gap: 8px;
+    }
+    .game_title{
+        font-size: 20px;
+    }
+    .game_text{
+       font-size: 14px;
+       -webkit-line-clamp: 4;
+    }
+    .btn{
+        padding: 8px 12px;
+        font-size: 13px;
+    }
     .widow{
         height: 230px;
     }
